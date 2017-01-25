@@ -10,6 +10,7 @@
 \usepackage{caption}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{hyperref}
 
 \newtheorem{theorem}{Theorem}[section]
 
@@ -30,17 +31,17 @@
 \title{Gaussian Process Regression}
 \subtitle{Introduction, Comparison and Analysis}
 \author{
-    \alignauthor Tzu-Heng Lin, 2014011054, W42\\
+    \alignauthor \color{blue}\href{http://lzhbrian.me}{Tzu-Heng Lin}\color{black}, 2014011054, W42\\
     \affaddr{Department of Electronic Engineering, Tsinghua
       University, Beijing, China\\}
-    \email{lzhbrian@gmail.com}
+    \email{\color{blue}\href{mailto:lzhbrian@gmail.com}{lzhbrian@gmail.com}}
 }
 
 
 \maketitle
 \begin{abstract}
-\footnote{Tzu-Heng Lin is currently an undergraduate student in the Department of Electronic Engineering, Tsinghua University. His research interests include Big Data Mining, Machine Learning, etc. For more information about him, please see http://lzhbrian.me. The code in this paper can be found in www.github.com/lzhbrian/gpr.
-Please feel free to contact him at any time via lzhbrian@gmail.com or linzh14@mails.tsinghua.edu.cn}
+\footnote{\color{blue}\href{http://lzhbrian.me}{Tzu-Heng Lin} \color{black} is currently an undergraduate student in the Department of Electronic Engineering, Tsinghua University. His research interests include Big Data Mining, Machine Learning, etc. For more information about me, please see \color{blue}\href{http://lzhbrian.me}{my personal website}\color{black}.
+Please feel free to contact me at any time via \color{blue}\href{mailto:lzhbrian@gmail.com}{email} }
 Gaussian Process Regression is a powerful, non-parametric tool developed based on the Bayesian theory and the Statistical learning theory. Choosing the right \emph{Mean Functions}, \emph{Kernel Functions} as well as the \emph{Likelihood Functions} and the \emph{Inference Methods} have been critical to the performance of the model. However, these works are often hard and timeconsuming.
 
 In this paper, we first give an introduction on the overall process of the Gaussian Process Regression. 
@@ -58,78 +59,27 @@ In addition, we implement sufficient number of experiments to systematically ana
 \printccsdesc
 
 
-
-\section{Introduction} \label{sec:introduction}
-
-Machine learning has been a heated research topic these days. With this amazing tool, we are now capable of predicting the price of the stock price based on history, doing the classifying by just inputing the pixels of images.
-
-Supervised learning is one of the most important sections for machine learning. And Regression is possibly the core of supervised learning.
-
-In Gaussian Process Regression, we take advantage of the flexibility and simplicity of Gaussian Process and implement it into a regression problem. 
-
-
-
-
-The structure of this pape is as follows: 
-In section \ref{sec:intro} we provide an overview of Gaussian Process Regression. 
-Section \ref{sec:autokernel} describes some of the recent works on the methods for auto-construction of the kernels.
-In section \ref{sec:experiment} we conduct two experiments.
-Conclusions are drawn in section \ref{sec:conclusion}.
-
-
+\input{introduction}
 
 % Section: Related Work
-\section{Related Work}
+\section{Related Work} \label{sec:related}
 
+\input{GPR}
 
+\input{ABCD}
 
-
-
-\newpage
-% Section: Gaussian Process Regression
-\section{Gaussian Process Regression} \label{sec:intro}
-
-\para{Regression}
-Regression is probably one of the most fundamental problems in a wide range of fields including \emph{Statistics}, \emph{Signal Processing} and \emph{Machine Learning}, etc. A regression problem is usually formulated as follows:
-Given a training set $D = \{ (\textbf{x}_{i}, y_{i}) | i = 1,2,...,n \}$, we assume that $\textbf{x}_{i}, y_{i}$ have the following relationship:
-	\begin{equation}
-		y_{i} = f(\textbf{x}_{i}) + e
-	\end{equation}
-where $e$ is the error noise. By finding such $f(\cdot)$, we can predict what a corresponding $y^{*}$ is in some test case $\textbf{x}^{*}$. Note that $\textbf{x}$ can either be a vector or a scalar.
-
-
-
-
-
-\para{Gaussian Process}
-
-\para{Gaussian Process Regression}
-
-
-
-
-% Section: Automatic Construction of Kernel Functions
-\section{Automatic Construction\\ of Kernel Functions} \label{sec:autokernel}
-
-
-
-
-% Section: Experiments
-\section{Experiments} \label{sec:experiment}
-
-Our experiments are conducted on two interesting datasets, along with the code can be found on github\footnote{Available at http://github.com/lzhbrian/gpr}.
+\input{experiments}
 
 
 \section{} \label{sec:}
 
 \section{} \label{sec:}
-
 
 
 % Section: Conclusion
 \section{Conclusion} \label{sec:conclusion}
 In this paper, we discuss about the Gaussian Process Regression.
-We comprehensively introduce the concept of Metropolis-Hastings Algorithm and conduct an experiment to verify its correctness. We also make some analysis about how accepting rate would interfere the sampling result.
+% We comprehensively introduce the concept of Metropolis-Hastings Algorithm and conduct an experiment to verify its correctness. We also make some analysis about how accepting rate would interfere the sampling result.
 
 We systematically compare three methods of partition function estimation which are crucial works in training a Restricted Bolztmann Machine or a Deep Belief Network. 
 
@@ -141,16 +91,20 @@ As future work, we would like to join more methods to the comparison and if coul
 % Last
 \renewcommand{\baselinestretch}{1.1}
 \balance
-\small
+% \small
 % Acknowledgement
 \section{Acknowledgement} \label{sec:acknowledgement}
-I would like to thank Yuanxin Zhang, XueChao Wang, for the discussion with me on the algorithms. Without them, I wouldn't have the possibility to accomplish this work in such a short time. This paper is a project of Stochastic Process Course in Tsinghua University, taught by Prof. Zhijian Ou.
+I would like to thank Yuanxin Zhang, XueChao Wang, for the discussion with me on the algorithms. Without them, I wouldn't have the possibility to accomplish this work in such a short time. This paper is a project of Stochastic Process Course in Tsinghua University, taught by Prof. Zhijian Ou.\\
 
+
+\para{Source Code and Dataset} Source Code to perform all experiments, along with the dataset in this paper can be found in my github repository\footnote{Available at \color{blue}\href{http://github.com/lzhbrian/gpr}{http://github.com/lzhbrian/gpr}}.
+
+
+\newpage
 % Reference
 \bibliographystyle{abbrv}
 \bibliography{ref}
 
-	
 
 \end{document}
 

@@ -1,0 +1,43 @@
+% Section: Gaussian Process Regression
+\section{Gaussian Process Regression} \label{sec:intro}
+
+\para{Regression}
+Regression is probably one of the most fundamental problems in a wide range of fields including \emph{Statistics}, \emph{Signal Processing} and \emph{Machine Learning}, etc. A regression problem is usually formulated as follows:
+Given a training set $D = \{ (\textbf{x}_{i}, y_{i}) | i = 1,2,...,n \}$, we assume that $\textbf{x}_{i}, y_{i}$ have the following relationship:
+	\begin{equation}
+		y_{i} = f(\textbf{x}_{i}) + e
+	\end{equation}
+where $e$ is the error noise. By finding such $f(\cdot)$, we can predict what a corresponding $y^{*}$ is in some test case $\textbf{x}^{*}$. Note that $\textbf{x}$ can either be a vector or a scalar.
+
+\para{Generalized Linear Model}
+A widely used regression model is called Generalized Linear Model(GLM)\cite{mccullagh1984generalized}, in which a regression function can be expressed as a linear combination:
+	\begin{equation}
+		f(\textbf{x}) = \Sigma_{i=1}^{M} w_{i}\phi_i (\textbf{x})
+	\end{equation}
+where $\phi_{i}(x)$ is called the basis function.
+In a regular GLM analysis, we have to firstly determine what our basis functions we are going to use, and subsequently can we use the training dataset to derive the parameters in the basis functions and the coefficients in the regression function.
+	
+\para{Mean Square Error}
+We use a measurement called the Mean Square Error(MSE) to evaluate the performance of the regression function. It is defined as follows:
+	\begin{equation}
+		MSE = \frac{1}{m}\Sigma^{m}_{i=1} (f(\textbf{x}^{*})-y_{i}^{*})^{2}
+	\end{equation}
+where $f(x)$ represents the regression function. A smaller MSE represents a better regression function on a test set.
+
+
+
+
+\para{Gaussian Process}
+
+\para{Gaussian Process Regression}
+Gauss Process Regression(GPR)\cite{rasmussen2006gaussian} is a popular regression method these years, the key of this method is to model the regression function $\{ f(\textbf{x}) | \textbf{x} \in S\}$ as a Gauss Process $N \{ m(\textbf{x}), K (\textbf{x},\textbf{x}^{'}) \}$, where $m(\textbf{x})$ is the \emph{Mean function} and $K (\textbf{x},\textbf{x}^{'})$ is the \emph{Kernel Function}.
+In a GPR, we don't have to derive the exact form of the regression function, we just need to determine the form of the above two functions. 
+By calculating the posterior probability of the desired $f(\textbf{x}^{*})$, \emph{i.e.} $p(f(\textbf{x}^{*}) | \textbf{x}^{*}, D)$, We can derive the mean value of the estimation, along with the standard deviation of this estimation. 
+In fact, the \emph{Kernel Function} $K (\textbf{x},\textbf{x}^{'})$ represents the correlation between $f(\textbf{x})$ and $f(\textbf{x}^{'})$.
+
+On the other hand, calculating the posterior probability is a intractable work when we have a high-dimensional dataset. It is a need that we introduce several inference method to estimate this work. Some popular works include
+MCMC\cite{gamerman1997sampling},
+Expectation Propagation\cite{minka2001expectation},
+Variational Bayes\cite{palmer2006variational,nickisch2009convex}
+and Laplace Approximation\cite{tierney1986accurate},
+etc.
