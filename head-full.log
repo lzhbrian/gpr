@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.8)  24 JAN 2017 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.8)  25 JAN 2017 11:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,7 +332,11 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 \c@theorem=\count128
- (./head-full.aux)
+ (./head-full.aux
+
+LaTeX Warning: Label `sec:' multiply defined.
+
+)
 \openout1 = `head-full.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -347,8 +351,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-
-(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
 \scratchdimen=\dimen134
@@ -430,40 +433,56 @@ Overfull \hbox (10.79999pt too wide) in paragraph at lines 40--40
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 44--44
-[]\T1/aer/m/n/9 Please feel free to con-tact him at any time via lzh-
+Overfull \hbox (3.36436pt too wide) in paragraph at lines 120--121
+[]\T1/aer/m/n/9 Our ex-per-i-ments are con-ducted on two in-ter-est-ing dataset
+s,
+ []
+
+
+Overfull \hbox (24.81042pt too wide) in paragraph at lines 131--133
+\T1/aer/m/n/9 gres-sion. We com-pre-hen-sively in-tro-duce the con-cept of Metr
+opolis-
  []
 
 No file head-full.bbl.
 
-Overfull \vbox (0.5853pt too high) has occurred while \output is active []
-
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
 
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-(./head-full.aux) ) 
+[2] (./head-full.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5107 strings out of 493013
- 73110 string characters out of 6133344
- 148006 words of memory out of 5000000
- 8519 multiletter control sequences out of 15000+600000
- 48053 words of font info for 65 fonts, out of 8000000 for 9000
+ 5128 strings out of 493013
+ 73291 string characters out of 6133344
+ 148077 words of memory out of 5000000
+ 8528 multiletter control sequences out of 15000+600000
+ 58199 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,11n,92p,510b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.
-enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on head-full.pdf (1 page, 75967 bytes).
+ 53i,11n,92p,417b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb>
+Output written on head-full.pdf (2 pages, 126982 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
