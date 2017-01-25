@@ -1,6 +1,8 @@
 \documentclass{sig-alternate-05-2015}
 
-\usepackage{subfigure}
+% \usepackage{subfigure}
+\usepackage{subfig}
+
 \usepackage{balance}
 \usepackage{multirow}
 \usepackage{color}
@@ -28,6 +30,8 @@
 
 \begin{document}
 
+\captionsetup[subfigure]{labelformat=empty}
+
 \title{Gaussian Process Regression}
 \subtitle{Introduction, Comparison and Analysis}
 \author{
@@ -42,11 +46,13 @@
 \begin{abstract}
 \footnote{\color{blue}\href{http://lzhbrian.me}{Tzu-Heng Lin} \color{black} is currently an undergraduate student in the Department of Electronic Engineering, Tsinghua University. His research interests include Big Data Mining, Machine Learning, etc. For more information about me, please see \color{blue}\href{http://lzhbrian.me}{my personal website}\color{black}.
 Please feel free to contact me at any time via \color{blue}\href{mailto:lzhbrian@gmail.com}{email} }
-Gaussian Process Regression is a powerful, non-parametric tool developed based on the Bayesian theory and the Statistical learning theory. Choosing the right \emph{Mean Functions}, \emph{Kernel Functions} as well as the \emph{Likelihood Functions} and the \emph{Inference Methods} have been critical to the performance of the model. However, these works are often hard and timeconsuming.
+Gaussian Process Regression(GPR) is a powerful, non-parametric tool developed based on the Bayesian theory and the Statistical learning theory. Choosing the right \emph{Mean Functions}, \emph{Kernel Functions} as well as the \emph{Likelihood Functions} and the \emph{Inference Methods} have been critical to the performance of the model. However, these works are often hard and require much expertise \& experience.
 
-In this paper, we first give an introduction on the overall process of the Gaussian Process Regression. 
-We also summarize some of the recent works which emphasize on the automatic construction of the \emph{Kernel Function}.
-In addition, we implement sufficient number of experiments to systematically analyze the performance of different \emph{Mean Functions}, \emph{Likelihood Functions} and the \emph{Inference Methods}. Our experiments are conducted on two interesting datasets. We seek to provide an comprehensive practical overview on the field of Gaussian Process Regression.
+In this paper, we first give an introduction on the overall process of GPR. 
+Subsequently, we give a precise explanation on some of the recent works which emphasize on the automatic construction of the \emph{Kernel Function}.
+In addition, we implement sufficient number of experiments to systematically analyze the performance of GPR with different \emph{Mean Functions}, \emph{Likelihood Functions} and the \emph{Inference Methods}. Our experiments are conducted on two interesting datasets. 
+
+We seek to provide an comprehensive practical overview in the field of Gaussian Process Regression.
 
 \end{abstract}
 
@@ -61,19 +67,13 @@ In addition, we implement sufficient number of experiments to systematically ana
 
 \input{introduction}
 
-% Section: Related Work
-\section{Related Work} \label{sec:related}
-
 \input{GPR}
+
+\input{related}
 
 \input{ABCD}
 
 \input{experiments}
-
-
-\section{} \label{sec:}
-
-\section{} \label{sec:}
 
 
 % Section: Conclusion
