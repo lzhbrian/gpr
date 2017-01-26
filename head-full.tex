@@ -79,13 +79,10 @@ We seek to provide an comprehensive practical overview in the field of Gaussian 
 % Section: Conclusion
 \section{Conclusion} \label{sec:conclusion}
 In this paper, we discuss about the Gaussian Process Regression.
-% We comprehensively introduce the concept of Metropolis-Hastings Algorithm and conduct an experiment to verify its correctness. We also make some analysis about how accepting rate would interfere the sampling result.
-
-We systematically compare three methods of partition function estimation which are crucial works in training a Restricted Bolztmann Machine or a Deep Belief Network. 
-
-As future work, we would like to join more methods to the comparison and if could, propose some improvement to the algorithms available.
-
-
+We comprehensively introduce the concept of Gaussian Process Regression.
+Specifically, we precisely explain the recent works for kernel auto construction.
+We also conduct two experiments, we systematically compare the performance of two Likelihood Functions and three Inference Methods. 
+As future work, we would like to join more information of GPR to this paper such as the details of how a hyperparameter is chosen and The deep discussion about the Inference methods; and if could, propose some improvement to the algorithms available.
 
 
 % Last
@@ -96,11 +93,9 @@ As future work, we would like to join more methods to the comparison and if coul
 \section{Acknowledgement} \label{sec:acknowledgement}
 I would like to thank Yuanxin Zhang, XueChao Wang, for the discussion with me on the algorithms. Without them, I wouldn't have the possibility to accomplish this work in such a short time. This paper is a project of Stochastic Process Course in Tsinghua University, taught by Prof. Zhijian Ou.\\
 
+\para{Source Code and Dataset} Source Code to perform all experiments, along with the dataset in this paper can be found in my github repository\footnote{Available at \color{blue}\href{http://github.com/lzhbrian/gpr}{http://github.com/lzhbrian/gpr}}. Due to my limited knowledge, there might be some mistakes and flaws in this paper as well as in the code, please do not hesitate to contact and correct me.
 
-\para{Source Code and Dataset} Source Code to perform all experiments, along with the dataset in this paper can be found in my github repository\footnote{Available at \color{blue}\href{http://github.com/lzhbrian/gpr}{http://github.com/lzhbrian/gpr}}.
 
-
-\newpage
 % Reference
 \bibliographystyle{abbrv}
 \bibliography{ref}

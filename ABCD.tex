@@ -54,7 +54,6 @@ k_{RQ}(x,x^{'}) &= \sigma^2 (1+\frac{(x-x^{'})^2}{2\alpha l^2})^{-\alpha}	\\
 	   \hline
 \end{tabular}
 }
-\vspace{-0.1in}
 \caption{Different kinds of kernels and its represented data structures.}
 \label{tab:kernel}
 % \vspace{-0.05in}
@@ -102,14 +101,13 @@ Below, we show some examples of structures by compositional kernels (Figure~\ref
 	   \hline
 \end{tabular}
 }
-\vspace{-0.1in}
 \caption{Some examples of the compositional kernels}
 \label{tab:compKernel}
 % \vspace{-0.05in}
 \end{table}
 
 
-\subsection{Automatic Construction}
+\subsection{Automatic Construction} \label{sec:autokernel}
 As we can see in the above analysis, choice of the form of a \emph{Kernel Function} can be critical in a GPR. However, this process was used to be a privileged work for experts since it requires a whole lot of experience and expertise. In \cite{duvenaud2013structure,lloyd2014automatic,duvenaud2014automatic}, Duvenaud and Lloyd et.al describe a tractable method to let a computer be capable of doing this work.
 This procedure is summarized as follows:
 

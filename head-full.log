@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.8)  26 JAN 2017 03:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.8)  27 JAN 2017 02:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,13 +443,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 
 (./head-full.aux
 
-LaTeX Warning: Label `eqa:add' multiply defined.
+LaTeX Warning: Label `sec:autokernel' multiply defined.
 
 
 LaTeX Warning: Label `eqa:add' multiply defined.
 
 
-LaTeX Warning: Label `fig:data1' multiply defined.
+LaTeX Warning: Label `eqa:add' multiply defined.
 
 )
 \openout1 = `head-full.aux'.
@@ -580,81 +580,81 @@ Overfull \hbox (6.83482pt too wide) in paragraph at lines 7--73
 ]], Vari-
  []
 
-(./ABCD.tex <figure/kernels/lin_kernel.pdf, id=117, 97.36375pt x 65.24374pt>
+(./ABCD.tex <figure/kernels/lin_kernel.pdf, id=125, 97.36375pt x 65.24374pt>
 File: figure/kernels/lin_kernel.pdf Graphic file (type pdf)
 
 <use figure/kernels/lin_kernel.pdf>
 Package pdftex.def Info: figure/kernels/lin_kernel.pdf used on input line 31.
 (pdftex.def)             Requested size: 107.99927pt x 72.37361pt.
 
-<figure/kernels/se_kernel.pdf, id=118, 97.36375pt x 68.255pt>
+<figure/kernels/se_kernel.pdf, id=126, 97.36375pt x 68.255pt>
 File: figure/kernels/se_kernel.pdf Graphic file (type pdf)
 
 <use figure/kernels/se_kernel.pdf>
 Package pdftex.def Info: figure/kernels/se_kernel.pdf used on input line 32.
 (pdftex.def)             Requested size: 107.99927pt x 75.71394pt.
 
-<figure/kernels/per_kernel.pdf, id=119, 97.36375pt x 68.255pt>
+<figure/kernels/per_kernel.pdf, id=127, 97.36375pt x 68.255pt>
 File: figure/kernels/per_kernel.pdf Graphic file (type pdf)
 
 <use figure/kernels/per_kernel.pdf>
 Package pdftex.def Info: figure/kernels/per_kernel.pdf used on input line 33.
 (pdftex.def)             Requested size: 107.99927pt x 75.71394pt.
 
-<figure/kernels/rq_kernel.pdf, id=120, 97.36375pt x 68.255pt>
+<figure/kernels/rq_kernel.pdf, id=128, 97.36375pt x 68.255pt>
 File: figure/kernels/rq_kernel.pdf Graphic file (type pdf)
 
 <use figure/kernels/rq_kernel.pdf>
 Package pdftex.def Info: figure/kernels/rq_kernel.pdf used on input line 34.
 (pdftex.def)             Requested size: 107.99927pt x 75.71394pt.
 
-<figure/kernels/lin_plus_per.pdf, id=123, 97.36375pt x 65.24374pt>
+<figure/kernels/lin_plus_per.pdf, id=131, 97.36375pt x 65.24374pt>
 File: figure/kernels/lin_plus_per.pdf Graphic file (type pdf)
 
 <use figure/kernels/lin_plus_per.pdf>
-Package pdftex.def Info: figure/kernels/lin_plus_per.pdf used on input line 79.
+Package pdftex.def Info: figure/kernels/lin_plus_per.pdf used on input line 78.
 
 (pdftex.def)             Requested size: 107.99927pt x 72.37361pt.
 
-<figure/kernels/se_plus_per.pdf, id=124, 97.36375pt x 68.255pt>
+<figure/kernels/se_plus_per.pdf, id=132, 97.36375pt x 68.255pt>
 File: figure/kernels/se_plus_per.pdf Graphic file (type pdf)
 
 <use figure/kernels/se_plus_per.pdf>
-Package pdftex.def Info: figure/kernels/se_plus_per.pdf used on input line 80.
+Package pdftex.def Info: figure/kernels/se_plus_per.pdf used on input line 79.
 (pdftex.def)             Requested size: 107.99927pt x 75.71394pt.
 
-<figure/kernels/se_times_per.pdf, id=125, 97.36375pt x 68.255pt>
+<figure/kernels/se_times_per.pdf, id=133, 97.36375pt x 68.255pt>
 File: figure/kernels/se_times_per.pdf Graphic file (type pdf)
 
 <use figure/kernels/se_times_per.pdf>
-Package pdftex.def Info: figure/kernels/se_times_per.pdf used on input line 81.
+Package pdftex.def Info: figure/kernels/se_times_per.pdf used on input line 80.
 
 (pdftex.def)             Requested size: 107.99927pt x 75.71394pt.
 
-<figure/kernels/lin_times_lin.pdf, id=126, 97.36375pt x 68.255pt>
+<figure/kernels/lin_times_lin.pdf, id=134, 97.36375pt x 68.255pt>
 File: figure/kernels/lin_times_lin.pdf Graphic file (type pdf)
 
 <use figure/kernels/lin_times_lin.pdf>
-Package pdftex.def Info: figure/kernels/lin_times_lin.pdf used on input line 82
+Package pdftex.def Info: figure/kernels/lin_times_lin.pdf used on input line 81
 .
 (pdftex.def)             Requested size: 107.99927pt x 75.71394pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.112 \subsection{Automatic Construction}
-                                          [2 <./figure/kernels/lin_kernel.pdf> 
-<./figure/kernels/se_kernel.pdf> <./figure/kernels/per_kernel.pdf> <./figure/ke
-rnels/rq_kernel.pdf>]
-Underfull \hbox (badness 2707) in paragraph at lines 133--133
+l.110 \subsection{Automatic Construction}
+                                          \label{sec:autokernel} [2 <./figure/k
+ernels/lin_kernel.pdf> <./figure/kernels/se_kernel.pdf> <./figure/kernels/per_k
+ernel.pdf> <./figure/kernels/rq_kernel.pdf>]
+Underfull \hbox (badness 2707) in paragraph at lines 131--131
 [][][]\T1/aer/m/n/9 Available at [][]github.com/jamesrobertlloyd/gpss-research[
 ]
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 136.
+put line 134.
 
-Overfull \hbox (1.27657pt too wide) in paragraph at lines 178--179
+Overfull \hbox (1.27657pt too wide) in paragraph at lines 176--177
 []\T1/aer/m/n/9 We also noted that if ev-ery base ker-nel is a one-dimensional
  []
 
@@ -674,16 +674,34 @@ Package epstopdf Info: Source file: <figure/data1.eps>
 (epstopdf)                    size: 9310 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/data1-eps-converted
 -to.pdf figure/data1.eps>
-(epstopdf)             \includegraphics on input line 11.
+(epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
 
-<figure/data1-eps-converted-to.pdf, id=246, 509.905pt x 411.5375pt>
+<figure/data1-eps-converted-to.pdf, id=254, 509.905pt x 411.5375pt>
 File: figure/data1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figure/data1-eps-converted-to.pdf>
 Package pdftex.def Info: figure/data1-eps-converted-to.pdf used on input line 1
-1.
+2.
 (pdftex.def)             Requested size: 167.99927pt x 135.58801pt.
+Package epstopdf Info: Source file: <figure/predict1.eps>
+(epstopdf)                    date: 2017-01-27 01:12:28
+(epstopdf)                    size: 43368 bytes
+(epstopdf)             Output file: <figure/predict1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-01-27 01:12:43
+(epstopdf)                    size: 12235 bytes
+(epstopdf)             Command: <repstopdf --outfile=figure/predict1-eps-conver
+ted-to.pdf figure/predict1.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+
+<figure/predict1-eps-converted-to.pdf, id=257, 562.1pt x 421.575pt>
+File: figure/predict1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figure/predict1-eps-converted-to.pdf>
+Package pdftex.def Info: figure/predict1-eps-converted-to.pdf used on input lin
+e 31.
+(pdftex.def)             Requested size: 167.99927pt x 125.99745pt.
 Package epstopdf Info: Source file: <figure/data2.eps>
 (epstopdf)                    date: 2017-01-26 02:07:56
 (epstopdf)                    size: 783968 bytes
@@ -692,53 +710,66 @@ Package epstopdf Info: Source file: <figure/data2.eps>
 (epstopdf)                    size: 204396 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/data2-eps-converted
 -to.pdf figure/data2.eps>
-(epstopdf)             \includegraphics on input line 29.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
-<figure/data2-eps-converted-to.pdf, id=247, 443.6575pt x 372.39125pt>
+<figure/data2-eps-converted-to.pdf, id=258, 443.6575pt x 372.39125pt>
 File: figure/data2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figure/data2-eps-converted-to.pdf>
-Package pdftex.def Info: figure/data2-eps-converted-to.pdf used on input line 2
+Package pdftex.def Info: figure/data2-eps-converted-to.pdf used on input line 4
 9.
 (pdftex.def)             Requested size: 215.99854pt x 181.29709pt.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+Overfull \hbox (2.27486pt too wide) in paragraph at lines 81--86
+\T1/aer/m/n/9 gres-sion. We com-pre-hen-sively in-tro-duce the con-cept of Gaus
+-
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 \newpage
-               [4 <./figure/data1-eps-converted-to.pdf> <./figure/data2-eps-con
-verted-to.pdf>] (./head-full.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+l.86 
+      [4 <./figure/data1-eps-converted-to.pdf> <./figure/predict1-eps-converted
+-to.pdf> <./figure/data2-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+(./head-full.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+
+Overfull \vbox (0.21136pt too high) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \end{document}
+l.104 \end{document}
                      [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (./head-full.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `head-full.out' has not changed.
-(rerunfilecheck)             Checksum: 1973DE0303AA4E97014592182DCB034B;884.
+(rerunfilecheck)             Checksum: B94AE9356CE99A39BCC005D54178C809;1036.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 8763 strings out of 493013
- 130025 string characters out of 6133344
- 236548 words of memory out of 5000000
- 12032 multiletter control sequences out of 15000+600000
- 64596 words of font info for 90 fonts, out of 8000000 for 9000
+ 8785 strings out of 493013
+ 130459 string characters out of 6133344
+ 237193 words of memory out of 5000000
+ 12043 multiletter control sequences out of 15000+600000
+ 65732 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,12n,96p,464b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -761,11 +792,12 @@ ts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
-times/utmb8a.pfb>
-Output written on head-full.pdf (5 pages, 465698 bytes).
+times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on head-full.pdf (5 pages, 490469 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 192 words of extra memory for PDF output out of 10000 (max. 10000000)
 
