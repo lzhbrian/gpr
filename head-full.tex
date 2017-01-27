@@ -33,7 +33,7 @@
 \captionsetup[subfigure]{labelformat=empty}
 
 \title{Gaussian Process Regression}
-\subtitle{Introduction, Comparison and Analysis}
+\subtitle{A practical overview}
 \author{
     \alignauthor \color{blue}\href{http://lzhbrian.me}{Tzu-Heng Lin}\color{black}, 2014011054, W42\\
     \affaddr{Department of Electronic Engineering, Tsinghua
@@ -49,8 +49,8 @@ Please feel free to contact me at any time via \color{blue}\href{mailto:lzhbrian
 Gaussian Process Regression(GPR) is a powerful, non-parametric tool developed based on the Bayesian theory and the Statistical learning theory. Choosing the right \emph{Mean Functions}, \emph{Kernel Functions} as well as the \emph{Likelihood Functions} and the \emph{Inference Methods} have been critical to the performance of the model. However, these works are often hard and require much expertise \& experience.
 
 In this paper, we first give an introduction on the overall process of GPR. 
-Subsequently, we give a precise explanation on some of the recent works which emphasize on the automatic construction of the \emph{Kernel Function}.
-In addition, we implement sufficient number of experiments to systematically analyze the performance of GPR with different \emph{Mean Functions}, \emph{Likelihood Functions} and the \emph{Inference Methods}. Our experiments are conducted on two interesting datasets. 
+Subsequently, we give a precise explanation on some of the recent works which emphasize on the choice of the \emph{Kernel Function}.
+In addition, we implement sufficient number of experiments to systematically analyze the performance of GPR with different \emph{Likelihood Functions} and the \emph{Inference Methods}. Our experiments are conducted on two interesting datasets. 
 
 We seek to provide an comprehensive practical overview in the field of Gaussian Process Regression.
 
@@ -81,8 +81,9 @@ We seek to provide an comprehensive practical overview in the field of Gaussian 
 In this paper, we discuss about the Gaussian Process Regression.
 We comprehensively introduce the concept of Gaussian Process Regression.
 Specifically, we precisely explain the recent works for kernel auto construction.
-We also conduct two experiments, we systematically compare the performance of two Likelihood Functions and three Inference Methods. 
-As future work, we would like to join more information of GPR to this paper such as the details of how a hyperparameter is chosen and The deep discussion about the Inference methods; and if could, propose some improvement to the algorithms available.
+We also conduct two experiments, in which we systematically compare the performance of two Likelihood Functions and three Inference Methods. 
+\textbf{The best MSE we get from two experiments are 0.2112 \& 0.0262.}
+As future work, we would like to join more information of GPR to this paper such as the details of how a hyperparameter is derived and some deeper discussion about the Inference methods; and if could, propose some improvement to the algorithms available.
 
 
 % Last

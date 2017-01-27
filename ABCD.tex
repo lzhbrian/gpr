@@ -1,7 +1,7 @@
 % Section: Kernel
-\section{Kernel choice} \label{sec:autokernel}
+\section{Kernel choice} \label{sec:kernel}
 Choosing an appropriate \emph{Kernel Function} in a regression problem has always been a nightmare for researchers and analysts. In this section, from the practical meaning of a \emph{Kernel Function}, we introduce an automatic way to construct a desired composite form of \emph{Kernel}.
-We also introduce a special \emph{Additive Kernel} used specifically for an Additive Gaussian Process, which is a case we will be solving in our experiment (Section~\ref{sec:experiment}).
+We also introduce a special \emph{Additive Kernel} used specifically for an Additive Gaussian Process, which is going to be a useful method in our experiment (Section~\ref{sec:experiment}).
 This section is based on the work of Duvenaud and Lloyd et. al \cite{duvenaud2013structure,lloyd2014automatic,duvenaud2014automatic,duvenaud2011additive}.
 
 
@@ -151,37 +151,31 @@ The implemented Matlab and Python code by Duvenaud and Lloyd et.al can be found 
 \subsection{Additive Gaussian Processes}
 
 \para{Additive Gaussian Process}
-\cite{duvenaud2011additive}
-In some 
+In our daily life, many natural functions result from some unknown interactions of some base kernels.
+For example, the price of a house may be jointly dependent on some features such as the size, the location and the materials, etc.
+In this method, we describe a way that can automatically discover the hidden interactions between the dimensions.
 
 
-\para{Additive Kernels}
+\para{Additive Kernels} \label{sec:addGauss}
 We now give the precise definition of additive kernels.
 As shown in \cite{duvenaud2011additive}, we define the 1st, 2nd, nth order additive kernel as:
 \begin{align}
-k_{add_{1}} (\textbf{x},\textbf{x}^{'}) &= \sigma^2_1 \sum_{i=1}^{D} k_{i} (\textbf{x}_{i},\textbf{x}_{i}^{'}) \\
-k_{add_{2}} (\textbf{x},\textbf{x}^{'}) &= \sigma^2_2 \sum_{i=1}^{D} \sum_{j=i+1}^{D} k_{i} (\textbf{x}_{i},\textbf{x}_{i}^{'}) k_{j} (\textbf{x}_{j},\textbf{x}_{j}^{'}) \\
-k_{add_{n}} (\textbf{x},\textbf{x}^{'}) &= \sigma^2_n \sum_{1 \leqslant i_1 < i_2 < ... < i_n \leqslant D} ( \prod_{d=1}^{n} k_{i_d} (\textbf{x}_{i_d},\textbf{x}_{i_d}^{'}) ) \\
+k_{add_{1}} (\textbf{x},\textbf{x}^{'}) &= \sigma^2_1 \sum_{i=1}^{D} k_{i} ({x}_{i},{x}_{i}^{'}) \\
+k_{add_{2}} (\textbf{x},\textbf{x}^{'}) &= \sigma^2_2 \sum_{i=1}^{D} \sum_{j=i+1}^{D} k_{i} ({x}_{i},{x}_{i}^{'}) k_{j} ({x}_{j},{x}_{j}^{'}) \\
+k_{add_{n}} (\textbf{x},\textbf{x}^{'}) &= \sigma^2_n \sum_{1 \leqslant i_1 < i_2 < ... < i_n \leqslant D} ( \prod_{d=1}^{n} k_{i_d} ({x}_{i_d},{x}_{i_d}^{'}) ) \\
 \end{align}
-where $k_{i} (\textbf{x}_{i},\textbf{x}_{i}^{'})$ is the \emph{base kernel} we assigned at first for each dimension $i \in \{1,2,...,D\}$.
+where $k_{i} ({x}_{i},{x}_{i}^{'})$ is the \emph{base kernel} we assigned at first for each dimension $i \in \{1,2,...,D\}$.
 A full additive kernel is a sum of all orders' additive kernels, as in equation~\ref{eqa:add}:
 \begin{equation} \label{eqa:add}
 K_{add_{full}} (\textbf{x},\textbf{x}^{'}) = \sum_{n=1}^{D} k_{add_{n}} (\textbf{x},\textbf{x}^{'})
 \end{equation}
-In the real practice, we could choose specific orders of the additive kernels:
-\begin{equation} \label{eqa:add}
-K_{add_{prac}} (\textbf{x},\textbf{x}^{'}) = \sum_{n} k_{add_{n}} (\textbf{x},\textbf{x}^{'})
-\end{equation}
 
-We also noted that if every base kernel is a one-dimensional squared-exponential(SE) kernal, the Dth order term of the additive kernel would be:
-\begin{equation} \label{eqa:add}
-\begin{aligned}
-K_{add_{D}} (\textbf{x},\textbf{x}^{'}) &= \sigma_{D}^{2} \prod_{d=1}^D k_{d} (\textbf{x}_{d},\textbf{x}_{d}^{'}) \\
-		     &= \sigma_{D}^{2} \prod_{d=1}^D exp(-\frac{(\textbf{x}_{d}-\textbf{x}_{d}^{'})^{2}}{2l_{d}^{2}}) \\
-		     &= \sigma_{D}^{2}  exp(-\sum_{d=1}^{D} \frac{(\textbf{x}_{d}-\textbf{x}_{d}^{'})^{2}}{2l_{d}^{2}})
-\end{aligned}
-\end{equation}
-which is just the multivariate squared-exponential kernel.
+\para{Practice}
+In the real practice, the only uncertain thing should be decided by us is the \emph{base kernels}.
+By using this \emph{Additive Kernel} method, we just need to input a sum of $1:R$~th order additive kernel(A full additive kernel) and it will automatically optimize the contribution of each order.
+
+\para{Special Case}
+We also note that if all of the contribution of the additive GP comes from the 1st order, it turns into a Generalized Additive Models(GAM)\cite{hastie1990generalized}, and if all of the contribution comes from the Dth order, it turns into an SE.
 
 
 
